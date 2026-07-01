@@ -1,34 +1,78 @@
+/* Common reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  margin: 0;
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
 }
 
 button {
+  border: 0;
+  background-color: transparent;
+}
+
+button:not(:disabled) {
   cursor: pointer;
 }
 
-img {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
+}
+
+img,
+picture,
+video {
   height: auto;
+}
+
+fieldset {
+  min-width: 0;
+  border: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+[hidden] {
+  display: none !important;
 }

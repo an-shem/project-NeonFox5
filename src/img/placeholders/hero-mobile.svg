@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="335" height="240" viewBox="0 0 335 240" role="img" aria-labelledby="title desc">
+  <title id="title">Hero mobile placeholder</title>
+  <desc id="desc">Temporary image placeholder. Replace with the exported Figma asset.</desc>
+  <rect width="100%" height="100%" rx="20" fill="#d9d9d9"/>
+  <path d="M0 180 L111 120 L223 180 L335 80 V240 H0Z" fill="#b9b9b9"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#242424" font-family="Arial, sans-serif" font-size="16">Hero mobile placeholder</text>
+</svg>

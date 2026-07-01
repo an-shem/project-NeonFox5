@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="100" viewBox="0 0 168 100" role="img" aria-labelledby="title desc">
+  <title id="title">Small hero placeholder</title>
+  <desc id="desc">Temporary image placeholder. Replace with the exported Figma asset.</desc>
+  <rect width="100%" height="100%" rx="20" fill="#d9d9d9"/>
+  <path d="M0 75 L56 50 L112 75 L168 33 V100 H0Z" fill="#b9b9b9"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#242424" font-family="Arial, sans-serif" font-size="16">Small hero placeholder</text>
+</svg>

@@ -1,0 +1,82 @@
+/* Shared pagination styles confirmed against the Figma UI kit. */
+.pagination {
+  min-height: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.pagination__control,
+.pagination__page {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  flex: 0 0 32px;
+  place-items: center;
+  border-radius: 50%;
+  transition:
+    color var(--transition-duration) var(--transition-timing),
+    border-color var(--transition-duration) var(--transition-timing),
+    background-color var(--transition-duration) var(--transition-timing),
+    transform var(--transition-duration) var(--transition-timing);
+}
+
+.pagination__control {
+  border: 1px solid var(--color-dark-10);
+  color: var(--color-dark-50);
+}
+
+.pagination__control .icon {
+  width: 14px;
+  height: 14px;
+}
+
+.pagination__page {
+  border: 1px solid transparent;
+  color: var(--color-pagination-muted);
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.pagination__page.is-active {
+  border-color: var(--color-dark);
+  color: var(--color-dark);
+}
+
+.pagination__ellipsis {
+  min-width: 18px;
+  color: var(--color-pagination-muted);
+  text-align: center;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.pagination__control:not(:disabled):hover,
+.pagination__control:not(:disabled):focus-visible,
+.pagination__page:not(.is-active):hover,
+.pagination__page:not(.is-active):focus-visible {
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+  transform: translateY(-1px);
+}
+
+.pagination__control:disabled {
+  color: var(--color-pagination-muted);
+  cursor: default;
+  opacity: 0.55;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination {
+    gap: 10px;
+  }
+
+  .pagination__page,
+  .pagination__ellipsis {
+    font-size: 24px;
+  }
+}
