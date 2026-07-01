@@ -12,7 +12,14 @@
         />
       </div>
           <div class="catalog" data-catalog>
-        <div class="catalog__loader local-loader" data-catalog-loader hidden></div>
+        <div class="catalog__loader local-loader" data-catalog-loader hidden role="status" aria-live="polite">
+          <span class="brand-loader" aria-hidden="true">
+            <svg class="brand-loader__icon" width="54" height="54">
+              <use href="./img/sprite.svg#icon-loader-sun"></use>
+            </svg>
+          </span>
+          <span class="visually-hidden">Loading exercises</span>
+        </div>
         <ul class="catalog__list" data-catalog-list></ul>
         <p class="catalog__message" data-catalog-message hidden></p>
         <nav class="pagination" data-pagination aria-label="Catalog pages"></nav>
