@@ -1,2 +1,113 @@
-/* Category and exercise cards
-   TODO: Implement this component according to the Figma layout. */
+/* ─── Exercise card ─────────────────────────────────────────── */
+
+.exercise-card {
+  min-width: 0;
+  padding: 16px;
+  border-radius: 15px;
+  background-color: var(--color-white);
+  transition:
+    transform var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing);
+}
+
+.exercise-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px var(--color-dark-10);
+}
+
+.exercise-card__top,
+.exercise-card__meta,
+.exercise-card__title-row,
+.exercise-card__badge-row {
+  display: flex;
+  align-items: center;
+}
+
+.exercise-card__top {
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.exercise-card__badge-row {
+  min-width: 0;
+  gap: 8px;
+}
+
+.exercise-card__badge {
+  padding: 4px 8px;
+  border: 1px solid var(--color-dark);
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+}
+
+.exercise-card__rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+}
+
+.exercise-card__rating .icon {
+  color: var(--color-accent);
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.exercise-card__start {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.exercise-card__title-row {
+  min-width: 0;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.exercise-card__round-icon {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  flex: 0 0 24px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.exercise-card__title {
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.exercise-card__meta {
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-top: 14px;
+  color: var(--color-dark-40);
+  font-size: 12px;
+}
+
+.exercise-card__meta strong {
+  color: var(--color-dark);
+  font-weight: var(--font-weight-regular);
+}
+
+@media screen and (min-width: 768px) {
+  .exercise-card {
+    min-height: 141px;
+  }
+
+  .exercise-card__title {
+    font-size: 24px;
+  }
+}
+
