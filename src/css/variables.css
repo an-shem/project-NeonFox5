@@ -1,0 +1,75 @@
+:root {
+  /* Typography */
+  --font-primary: 'DM Sans', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Solid colors confirmed in Figma Inspect */
+  --color-dark: #242424;
+  --color-light: #f4f4f4;
+  --color-white: #ffffff;
+  --color-accent: #eea10c;
+  --color-footer-muted: #c6cdd1;
+  --color-pagination-muted: #d4d4d4;
+
+  /* #242424 with opacity */
+  --color-dark-10: rgba(36, 36, 36, 0.1);
+  --color-dark-40: rgba(36, 36, 36, 0.4);
+  --color-dark-50: rgba(36, 36, 36, 0.5);
+  --color-dark-60: rgba(36, 36, 36, 0.6);
+  --color-dark-80: rgba(36, 36, 36, 0.8);
+
+  /* #f4f4f4 with opacity */
+  --color-light-10: rgba(244, 244, 244, 0.1);
+  --color-light-20: rgba(244, 244, 244, 0.2);
+  --color-light-40: rgba(244, 244, 244, 0.4);
+  --color-light-60: rgba(244, 244, 244, 0.6);
+
+  /* Overlay confirmed in Figma Inspect */
+  --color-backdrop: rgba(4, 4, 4, 0.4);
+
+  /* Technical UI colors (not part of the Figma palette) */
+  --color-placeholder: #d9d9d9;
+  --color-error: #c62828;
+  --color-success: #2e7d32;
+  --color-shadow-soft: rgba(0, 0, 0, 0.18);
+  --color-shadow-strong: rgba(0, 0, 0, 0.25);
+  --color-loader-light-bg: rgba(244, 244, 244, 0.58);
+  --color-loader-dark-bg: rgba(36, 36, 36, 0.52);
+  --color-loader-modal-bg: rgba(36, 36, 36, 0.72);
+  --color-skeleton: rgba(36, 36, 36, 0.09);
+  --color-skeleton-line: rgba(36, 36, 36, 0.1);
+  --color-skeleton-shine: rgba(255, 255, 255, 0.55);
+
+  /* Layout: 375px mobile frame with 20px side paddings */
+  --container-max-width: 375px;
+  --container-padding: 20px;
+
+  /* Radii */
+  --radius-small: 12px;
+  --radius-medium: 20px;
+  --radius-large: 30px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Header */
+  --header-height: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --container-max-width: 768px;
+    --container-padding: 32px;
+    --header-height: 96px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --container-max-width: 1440px;
+  }
+}
