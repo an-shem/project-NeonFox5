@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Your Energy favorite exercises saved on this device."
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Favorites | Your Energy</title>
+    <script type="module" crossorigin src="/project-NeonFox5/favorites.js"></script>
+    <link rel="modulepreload" crossorigin href="/project-NeonFox5/assets/styles-BG_PCBbk.js">
+    <link rel="stylesheet" crossorigin href="/project-NeonFox5/assets/styles-D8zq-hXS.css">
+  </head>
+  <body data-page="favorites">
+    <header class="site-header">
+  <div class="container">
+    <!-- TODO: Implement logo, desktop navigation, social links and menu button. -->
+    <p>Header component</p>
+  </div>
+</header>
+
+    <div class="mobile-menu" data-mobile-menu hidden>
+  <!-- TODO: Implement the mobile navigation menu from Figma. -->
+  <p>Mobile menu component</p>
+</div>
+
+
+    <main>
+      <section class="favorites-section section-placeholder">
+  <div class="container">
+    <div class="section-placeholder__box">
+      <div>
+        <h1>Favorites</h1>
+        <p>You are on the Favorites page.</p>
+        <p>TODO: Render saved exercises and the empty state here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="quote-section section-placeholder">
+  <div class="container">
+    <div class="section-placeholder__box">
+      <p>Quote of the day component</p>
+      <!-- TODO: Add quote markup and load data through yourEnergyApi.getQuote(). -->
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <div class="modal-backdrop" data-exercise-modal hidden>
+  <!-- TODO: Implement the exercise details modal. -->
+  <section class="exercise-modal" role="dialog" aria-modal="true" aria-label="Exercise details">
+    <p>Exercise modal component</p>
+  </section>
+</div>
+
+    <div class="modal-backdrop" data-rating-modal hidden>
+  <!-- TODO: Implement the exercise rating form. -->
+  <section class="rating-modal" role="dialog" aria-modal="true" aria-label="Rate exercise">
+    <p>Rating modal component</p>
+  </section>
+</div>
+
+    <div class="loader-backdrop" data-loader hidden aria-hidden="true">
+  <!-- TODO: Add the final loader design. -->
+  <span class="loader">Loading…</span>
+</div>
+
+    <button class="scroll-up" type="button" data-scroll-up hidden aria-label="Scroll to top">
+  <!-- Replace this placeholder icon with the final sprite symbol. -->
+  <svg width="24" height="24" aria-hidden="true">
+    <use href="/project-NeonFox5/assets/sprite-wsNCYw8a.svg#icon-placeholder"></use>
+  </svg>
+</button>
+
+
+    <div class="notification-region" data-notification-region aria-live="polite"></div>
+  </body>
+</html>
