@@ -1,7 +1,12 @@
-export function initNotifications() {
-  // TODO: Initialize the chosen notification library or custom notifications.
-}
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
-export function showNotification(_message, _type = 'info') {
-  // TODO: Display a notification to the user.
-}
+iziToast.settings({
+  messageSize: '24',
+  position: 'topRight',
+  close: false,
+  progressBar: false,
+  messageColor: 'white',
+});
+
+export default iziToast;

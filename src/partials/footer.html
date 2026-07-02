@@ -1,8 +1,115 @@
-<footer class="site-footer section-placeholder">
-  <div class="container">
-    <div class="section-placeholder__box">
-      <p>Footer and subscription form component</p>
-      <!-- TODO: Implement according to Figma and connect yourEnergyApi.subscribe(). -->
+<footer class="site-footer">
+  <div class="container site-footer__container">
+    <div class="site-footer__brand">
+      <a
+        class="logo logo--inverse"
+        href="./index.html"
+        aria-label="Your Energy home"
+      >
+        <svg class="logo-icon" aria-hidden="true" aria-label="Site logo">
+          <use href="./img/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <ul
+        class="social-list site-footer__social"
+        aria-label="GoIT social media"
+      >
+        <li>
+          <a
+            class="social-link social-link--inverse"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GoIT on Facebook"
+          >
+            <svg class="social-link__icon" aria-hidden="true">
+              <use href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="social-link social-link--inverse"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GoIT on Instagram"
+          >
+            <svg class="social-link__icon" height="20" aria-hidden="true">
+              <use href="./img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="social-link social-link--inverse"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GoIT on YouTube"
+          >
+            <svg class="social-link__icon" aria-hidden="true">
+              <use href="./img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="site-footer__slogan">
+      Transforming your <em>body</em> shape with us
+    </p>
+
+    <div class="site-footer__subscription">
+      <p class="site-footer__subscription-title">
+        Subscribe and learn about new exercises!
+      </p>
+
+      <form class="subscription-form" data-subscribe-form>
+        <label class="visually-hidden" for="subscription-email">Email</label>
+        <input
+          class="subscription-form__input"
+          id="subscription-email"
+          name="email"
+          type="email"
+          placeholder="Email"
+          required
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        />
+
+        <button class="subscription-form__button" type="submit">
+          <span class="button-content">Send</span>
+          <span
+            class="button-loader"
+            data-button-loader
+            hidden
+            aria-hidden="true"
+          >
+            <span class="brand-loader brand-loader--small">
+              <svg class="brand-loader__icon" width="24" height="24">
+                <use href="./img/sprite.svg#icon-loader-sun"></use>
+              </svg>
+            </span>
+          </span>
+        </button>
+      </form>
+    </div>
+
+    <div class="site-footer__legal">
+      <p>Your Energy. All rights reserved.</p>
+
+      <div>
+        <a href="#" aria-label="Privacy Policy placeholder">Privacy Policy</a>
+        <span aria-hidden="true">/</span>
+        <a href="#" aria-label="Terms of Service placeholder"
+          >Terms of Service</a
+        >
+      </div>
+
+      <p>&#169;2026</p>
     </div>
   </div>
 </footer>

@@ -25,6 +25,14 @@
   display: none;
 }
 
+.logo {
+  color: var(--color-dark);
+}
+
+.logo--inverse {
+  color: var(--color-light);
+}
+
 .logo-icon {
   width: 132px;
   height: 14px;
@@ -47,8 +55,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   background-color: transparent;
   border: 1px solid var(--color-dark-10);
@@ -57,6 +65,11 @@
     fill var(--transition-duration) var(--transition-timing),
     background-color var(--transition-duration) var(--transition-timing),
     border-color var(--transition-duration) var(--transition-timing);
+
+  @media screen  and (min-width: 768px) {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .social-link:hover,
