@@ -1,2 +1,56 @@
-/* Mobile menu
-   TODO: Implement this component according to the Figma layout. */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 100vh;
+  z-index: 1000;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.mobile-menu__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--color-light);
+}
+
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+}
+
+.mobile-menu__link {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.mobile-menu__link.is-active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.mobile-menu__social {
+  position: absolute;
+  bottom: 20px;
+}
+
+.mobile-menu__social .social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--color-light-10);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}

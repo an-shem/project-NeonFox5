@@ -1,6 +1,80 @@
 <header class="site-header">
-  <div class="container">
-    <!-- TODO: Implement logo, desktop navigation, social links and menu button. -->
-    <p>Header component</p>
+  <div class="container site-header__container">
+    <a class="logo" href="./index.html" aria-label="Your Energy home">
+      <svg class="logo-icon" aria-hidden="true" aria-label="Site logo">
+        <use href="./img/logo.svg"></use>
+      </svg>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a class="desktop-nav__link" data-nav-link="home" href="./index.html">
+        Home
+      </a>
+
+      <a
+        class="desktop-nav__link"
+        data-nav-link="favorites"
+        href="./favorites.html"
+      >
+        Favorites
+      </a>
+    </nav>
+
+    <ul class="social-list site-header__social" aria-label="GoIT social media">
+      <li>
+        <a
+          class="social-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GoIT on Facebook"
+        >
+          <svg class="social-link__icon" aria-hidden="true">
+            <use href="./img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a
+          class="social-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GoIT on Instagram"
+        >
+          <svg class="social-link__icon" aria-hidden="true">
+            <use href="./img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a
+          class="social-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GoIT on YouTube"
+        >
+          <svg class="social-link__icon" aria-hidden="true">
+            <use href="./img/sprite.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button
+      class="menu-button"
+      type="button"
+      data-menu-open
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      aria-label="Open navigation menu"
+    >
+      <svg class="icon" width="32" height="32" aria-hidden="true">
+        <use href="./img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
