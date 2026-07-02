@@ -1,2 +1,150 @@
-/* Hero
-   TODO: Implement this component according to the Figma layout. */
+.hero {
+  padding-top: 80px;
+}
+
+.hero__top {
+  margin-bottom: 20px;
+}
+
+.hero__spark {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  vertical-align: top;
+}
+
+.hero__title {
+  max-width: 335px;
+  margin-bottom: 20px;
+  font-size: 38px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+}
+
+.hero__description {
+  max-width: 335px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.hero__image {
+  width: 335px;
+  height: 460px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border-radius: var(--radius-large);
+}
+
+.hero__tags-block {
+  display: none;
+}
+
+.hero__tags-mobile {
+  width: 335px;
+  display: flex;
+  gap: 8px;
+}
+
+.hero__tags-mobile li {
+  padding: 4px 12px;
+  border: 1px solid var(--color-dark);
+  border-radius: var(--radius-large);
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 100px;
+  }
+  .hero__top {
+    margin-bottom: 32px;
+  }
+
+  .hero__spark {
+    width: 59px;
+    height: 59px;
+  }
+
+  .hero__title {
+    max-width: 639px;
+    font-size: 74px;
+    line-height: 1;
+  }
+
+  .hero__description {
+    max-width: 528px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .hero__image {
+    width: 704px;
+    height: 550px;
+    margin-bottom: 16px;
+    border-radius: var(--radius-extra-large);
+  }
+
+  .hero__tags-mobile {
+    width: 396px;
+    margin-left: auto;
+  }
+
+  .hero__tags-mobile li {
+    padding: 4px 16px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 96px;
+  }
+
+  .hero__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero__tags-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .hero__small-image {
+    width: 168px;
+    height: 100px;
+    margin-bottom: 32px;
+    object-fit: cover;
+    border-radius: var(--radius-medium);
+  }
+
+  .hero__tags {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .hero__tags li {
+    padding: 4px 16px;
+    border: 1px solid var(--color-dark);
+    border-radius: var(--radius-large);
+    font-size: 16px;
+  }
+
+  .hero__image {
+    width: 1376px;
+    height: 350px;
+    margin-bottom: 0;
+    display: block;
+    object-fit: cover;
+    object-position: center -146px;
+  }
+
+  .hero__tags-mobile {
+    display: none;
+  }
+}
