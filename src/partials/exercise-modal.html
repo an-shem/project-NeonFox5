@@ -1,6 +1,29 @@
-<div class="modal-backdrop" data-exercise-modal hidden>
-  <!-- TODO: Implement the exercise details modal. -->
-  <section class="exercise-modal" role="dialog" aria-modal="true" aria-label="Exercise details">
-    <p>Exercise modal component</p>
+<div class="modal-backdrop" id="exercise-modal" data-exercise-modal hidden>
+  <section
+    class="modal exercise-modal"
+    data-exercise-modal-panel
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="exercise-modal-title"
+  >
+    <div class="local-loader modal__loader" data-exercise-modal-loader hidden role="status">
+      <span class="brand-loader brand-loader--inverse" aria-hidden="true">
+        <svg class="brand-loader__icon" width="54" height="54">
+          <use href="./img/sprite.svg#icon-loader-sun"></use>
+        </svg>
+      </span>
+      <span class="visually-hidden">Loading exercise details</span>
+    </div>
+    <button
+      class="modal__close"
+      type="button"
+      data-exercise-modal-close
+      aria-label="Close exercise details"
+    >
+      <svg class="icon" width="24" height="24" aria-hidden="true">
+        <use href="./img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="exercise-modal__content" data-exercise-modal-content></div>
   </section>
 </div>
