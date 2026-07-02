@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,7 +18,7 @@
     <title>Favorites | Your Energy</title>
   </head>
   <body data-page="favorites">
-    <load src="./partials/header.html" />
+    <load src="./partials/header.html" icon-path="img/sprite.svg" />
     <load src="./partials/mobile-menu.html" />
 
     <main>
@@ -31,7 +31,11 @@
     <load src="./partials/loader.html" />
     <load src="./partials/scroll-up.html" />
 
-    <div class="notification-region" data-notification-region aria-live="polite"></div>
+    <div
+      class="notification-region"
+      data-notification-region
+      aria-live="polite"
+    ></div>
     <script type="module" src="./js/favorites.js"></script>
   </body>
 </html>

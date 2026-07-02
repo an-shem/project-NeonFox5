@@ -1,4 +1,70 @@
-<div class="mobile-menu" data-mobile-menu hidden>
-  <!-- TODO: Implement the mobile navigation menu from Figma. -->
-  <p>Mobile menu component</p>
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+  <button
+    class="mobile-menu__close"
+    type="button"
+    data-menu-close
+    aria-label="Close navigation menu"
+  >
+    <svg class="icon" width="32" height="32" aria-hidden="true">
+      <use href="./img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+    <a class="mobile-menu__link" data-nav-link="home" href="./index.html">
+      Home
+    </a>
+
+    <a
+      class="mobile-menu__link"
+      data-nav-link="favorites"
+      href="./favorites.html"
+    >
+      Favorites
+    </a>
+  </nav>
+
+  <ul class="social-list mobile-menu__social" aria-label="GoIT social media">
+    <li>
+      <a
+        class="social-link social-link--inverse"
+        href="https://www.facebook.com/goITclub/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GoIT on Facebook"
+      >
+        <svg class="social-link__icon" aria-hidden="true">
+          <use href="./img/sprite.svg#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+
+    <li>
+      <a
+        class="social-link social-link--inverse"
+        href="https://www.instagram.com/goitclub/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GoIT on Instagram"
+      >
+        <svg class="social-link__icon" aria-hidden="true">
+          <use href="./img/sprite.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+
+    <li>
+      <a
+        class="social-link social-link--inverse"
+        href="https://www.youtube.com/c/GoIT"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GoIT on YouTube"
+      >
+        <svg class="social-link__icon" aria-hidden="true">
+          <use href="./img/sprite.svg#icon-youtube"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
 </div>
