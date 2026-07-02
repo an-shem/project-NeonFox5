@@ -25,6 +25,10 @@
   display: none;
 }
 
+.logo {
+  color: var(--color-dark);
+}
+
 .logo-icon {
   width: 132px;
   height: 14px;
